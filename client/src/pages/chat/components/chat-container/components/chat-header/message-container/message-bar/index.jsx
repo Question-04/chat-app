@@ -4,7 +4,7 @@ import { RiEmojiStickerLine } from "react-icons/ri";
 import { IoSend } from "react-icons/io5";
 import EmojiPicker from "emoji-picker-react"; // Ensure you're importing this
 import { useAppStore } from "@/store";
-import { useSocket } from "@/context/socketContext";
+import { useSocket } from "@/context/SocketContext";
 import { apiClient } from "@/lib/api-client";
 import { UPLOAD_FILE_ROUTE } from "@/utils/constants";
 
