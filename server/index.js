@@ -15,7 +15,7 @@ const port = process.env.PORT || 3001;
 const databaseURL = process.env.DATABASE_URL;
 
 app.use(cors({
-    origin:[process.env.ORIGIN],
+    origin:process.env.ORIGIN,
     methods:["GET", "POST", "PUT", "PATCH", "DELETE"],
     credentials: true,
 })
@@ -35,7 +35,7 @@ app.use("/api/messages", messagesRoutes);
 
 
 const server = app.listen(port, () => {
-  console.log(`server is running at http://localhost:${port}`);
+  console.log(`server is running at http://192.168.29.115:${port}`);
 });
 
 setupSocket(server)
