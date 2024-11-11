@@ -35,7 +35,7 @@ app.use("/api/messages", messagesRoutes);
 
 
 const server = app.listen(port, () => {
-  console.log(`server is running at http://192.168.29.115:${port}`);
+  console.log(`server is running at https://chat-app-backend-mk1b.onrender.com`);
 });
 
 setupSocket(server)
