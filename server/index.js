@@ -11,7 +11,7 @@ import messagesRoutes from "./routes/MessagesRoutes.js";
 dotenv.config();
 
 const app = express();
-const port = process.env.PORT || 3001;
+const port = "https://chat-app-backend-mk1b.onrender.com" || 3001;
 const databaseURL = process.env.DATABASE_URL;
 
 app.use(cors({
